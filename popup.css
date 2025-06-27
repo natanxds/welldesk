@@ -1,0 +1,291 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    width: 280px;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    padding: 15px;
+    text-align: center;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.settings-icon {
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    cursor: pointer;
+    color: #004a99;
+}
+
+h1 {
+    font-size: 20px;
+    color: #004a99;
+    /* Motorola Solutions Blue */
+    margin: 0;
+}
+
+.darkmode-icon {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    font-size: 20px;
+    color: #004a99;
+}
+
+.status {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.settings {
+    margin-bottom: 20px;
+}
+
+.settings label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.range-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: #ddd;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #005eb8;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #005eb8;
+    cursor: pointer;
+    border: none;
+}
+
+#interval-value {
+    font-size: 14px;
+    font-weight: bold;
+    color: #004a99;
+}
+
+.success-popup {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.success-popup.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .status,
+body.dark-mode .settings label,
+body.dark-mode #interval-value {
+    color: #ffffff;
+}
+.sound-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.noise-selector {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.noise-dropdown {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.noise-btn {
+  background-color: #005eb8;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+}
+
+.noise-btn:hover {
+  background-color: #004a99;
+}
+
+.noise-btn.playing {
+  background-color: #dc3545;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.volume-control i {
+  color: #005eb8;
+  font-size: 18px;
+}
+
+.volume-slider {
+  width: 120px;
+  height: 6px;
+  border-radius: 3px;
+  background: #ddd;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #005eb8;
+  cursor: pointer;
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #005eb8;
+  cursor: pointer;
+  border: none;
+}
+
+.volume-value {
+  font-size: 14px;
+  font-weight: bold;
+  color: #005eb8;
+  min-width: 25px;
+  text-align: right;
+}
+
+/* Dark mode styles */
+body.dark-mode .sound-bar {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .noise-dropdown {
+  background-color: #2d2d2d;
+  color: white;
+  border-color: #444;
+}
+
+body.dark-mode .volume-control i,
+body.dark-mode .volume-value {
+  color: #4db8ff;
+}
+.motivation-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 18px 18px 12px 18px;
+  margin: 18px 0 18px 0;
+  text-align: left;
+  position: relative;
+  min-height: 90px;
+  transition: box-shadow 0.2s;
+}
+body.dark-mode .motivation-card {
+  background: #23272f;
+  color: #f3f3f3;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+.motivation-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.motivation-message {
+  font-size: 0.98em;
+  margin-bottom: 6px;
+}
+.motivation-benefit {
+  font-size: 0.92em;
+  color: #4e8cff;
+  margin-bottom: 0;
+}
+.motivation-next {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #4e8cff;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 2px;
+  transition: color 0.2s;
+}
+.motivation-next:hover {
+  color: #1a5fd0;
+}

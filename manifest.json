@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "WellDesk",
+  "version": "1.0",
+  "description": "A simple wellness companion to encourage healthy habits during the workday.",
+  "permissions": [
+    "alarms",
+    "notifications",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/logo3.png",
+      "32": "images/logo3.png",
+      "48": "images/logo3.png",
+      "128": "images/logo3.png"
+    }
+  },
+  "icons": {
+    "16": "images/logo3.png",
+    "32": "images/logo3.png",
+    "48": "images/logo3.png",
+    "128": "images/logo3.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

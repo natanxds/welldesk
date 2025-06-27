@@ -1,0 +1,41 @@
+body {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    text-align: center;
+    padding: 30px;
+    background: #ffffff;
+    color: #333333;
+    margin: 0;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+
+.container {
+    position: relative;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.countdown {
+    background: #0066cc;
+    color: white;
+    border: 1px solid #005eb8;
+    padding: 8px 16px;
+    border-radius: 1px;
+    font-size: 20px;
+    font-weight: 500;
+    min-width: 50px;
+    width: fit-content;
+    margin: 20px auto 0 auto;
+    display: inline-block;
+}
+
+body.dark-mode .countdown {
+    color: #ffffff;
+}
